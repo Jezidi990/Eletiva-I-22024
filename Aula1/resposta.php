@@ -9,6 +9,8 @@
     <?php
         $valor = $_POST['valor'];
         echo "Valor informado: $valor";
+       
     ?>
+    # $valor = (int) $_post['valor']
 </body>
 </html>
