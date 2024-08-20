@@ -15,8 +15,8 @@
                     $valor2 = $_POST['valor2'];
                 // + - * / % ++ -- ** operadores aritméticos
                 $resultado = $valor1 + $valor2;
-                echo "<p>Soma: $resultado </p>"
-            }catch(Exception $e){
+                echo "<p>Soma: $resultado </p>" }
+                 catch(Exception $e){
                     echo "Erro!".$e->getMessage();
                 }
             }
