@@ -27,9 +27,59 @@
                         <input type="text" inputmode="numeric" id="cpf" name="cpf" placeholder="000.000.000-00" class="form-control">
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-2"
+                <div class="row mt-4">
+                    <div class="col-2">
+                        <label for="celular" class="form-label">N° Celular</label>
+                        <input type="text" id="celular" class="form-control" name="celular" placeholder="N° Celular" inputmode="numeric">
+                    </div>
+                    <div class="col-2">
+                        <label for="fixo" class="form-label">N° Telefone fixo</label>
+                        <input type="text" id="fixo" name="fixo" placeholder="N° Telefone fixo" class="form-control" inputmode="numeric">
+                    </div> 
+                    <div class="col-2">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" placeholder="ex:1900000" id="cep" name="cep" class="form-control" inputmode="numeric">
+                    </div>
+                    <div class="col-2">
+                        <label for="logradouro" class="form-label">Logradouro</label>
+                        <input type="text" placeholder="ex:rua seilaoq" id="logradouro" name="logradouro" class="form-control">
+                    </div> 
+                    <div class="col-1">
+                        <label for="n" class="form-label">N°</label>
+                        <input type="text" inputmode="numeric" class="form-control" id="numero" name="numero" placeholder="N°">
+                    </div>
+                    <div class="col-2">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input type="text" id="bairro" name="bairro" placeholder="Bairro" class="form-control">
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-2">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade" placeholder="cidade">
+                        </div>
+                        <div class="col-1">
+                            <label for="uf" class="form-label">UF</label>
+                            <input type="text" class="form-control" id="uf" name="uf" placeholder="UF">
+                        </div>
+                        <div class="col-2">
+                            <label for="status" class="form-label">Status</label>
+                            <select class="form-select"  id="status" name="status" >
+                                <option selected>Selecione</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-end">
+                          <button type="submit" class="btn btn-danger">Resetar</button>
+                          <button type="reset" class="btn btn-success">Próximo</button>
+                        </div>
+                    </div>
+
                 </div>
+
             </form>
         </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
