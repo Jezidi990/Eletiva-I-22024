@@ -8,22 +8,22 @@
   </head>
   <body>
     <main class="container">
-        <?php 
-                if($_SERVER["REQUEST_METHOD"]=="POST"){
-                    try{
-                        (float)$temp_fahren = $_POST["temperatura"];
-
-                        (float)$temp_celsius = (($temp_fahren - 32 ) *5) /9;
-                        
-                        echo "<p> a temperatura em Celsius é: $temp_celsius </p>";
-                        
-                    }
-                
-                    catch (Exception $e)
-                        {echo "Erro: " .$e -> getMessage();}
-                }
-        ?>
+      <form action="resposta.php" method="post">
+          <div class="row">
+            <div class="col">
+              <label for="altura" class="formlabel">Altura</label>
+              <input id="altura" name="altura" type="text" class="form-control">
+            </div>
+            <div class="col">
+              <label for="largura" class="formlabel">largura</label>
+              <input id="largura" name="largura" type="text" class="form-control">
+            </div>
+            <div class="row mt-4">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>              
+          </div>
+      </form>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
-</html> 
+</html>
