@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,30 @@
 	<?php
 		if($_SERVER["REQUEST_METHOD"] == "POST"){
 			try{
-				$n1 = (int)$_POST["n1"];
-				$fatorial = 1;
-
-				for($n1; $n1 > 0; $n1--){
-					$fatorial *= $n1;
-				}	
-				echo"Fatorial do número é $fatorial";
+				$pos = 0;
+				$numeros = 7;
+				$arraynum = array();
+				for($i = 0; $i < $numeros; $i++)
+				{
+					$valor = (int) $_POST["n".($i + 1)];
+					$arraynum[] = $valor;
+				}
+				for($i = 0; $i < $numeros; $i++){
+					if($i == 0){
+						$menor = $arraynum[$i];
+						$pos = $i + 1;
+					}else if($arraynum[$i] < $menor){
+						$menor = $arraynum[$i];
+						$pos = $i + 1;
+					}
+				}
+				echo"
+					<div class='row m-5'>
+						<div class='col'>
+							<h1 class='text-center'>O menor número é $menor e está na posição $pos</h1>
+						</div>
+					</div>
+				";
 			}catch(Exception $e){
 				echo"Erro".$e->getMessage();
 			}
