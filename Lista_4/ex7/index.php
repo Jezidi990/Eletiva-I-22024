@@ -29,7 +29,7 @@
     <script>
         $(document).ready(function() {
             $('#data1, #data2').datepicker({
-                format: 'yyyy-mm-dd',
+                format: 'dd-mm-yyyy',
                 autoclose: true,
                 todayHighlight: true
             });
